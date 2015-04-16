@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{50EC21B0-D987-44BA-82F7-A2252C51911B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ExamQuestions</RootNamespace>
+    <AssemblyName>ExamQuestions</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CustomHashMap.cs" />
+    <Compile Include="CustomLinkedList.cs" />
+    <Compile Include="Exam\Lotto.cs" />
+    <Compile Include="Exam\ValueTypes.cs" />
+    <Compile Include="KeyValue.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\Employee.cs" />
+    <Compile Include="Service\EmployeeService.cs" />
+    <Compile Include="Tests\AnimalBase.cs" />
+    <Compile Include="Tests\AsyncTester.cs" />
+    <Compile Include="Tests\AsyncTests.cs" />
+    <Compile Include="Tests\Base.cs" />
+    <Compile Include="Tests\BaseClass.cs" />
+    <Compile Include="Tests\Circle.cs" />
+    <Compile Include="Tests\CustomIndexer.cs" />
+    <Compile Include="Tests\DecimalDoubleTest.cs" />
+    <Compile Include="Tests\Events\EventArgsExtender.cs" />
+    <Compile Include="Tests\Events\IMailManager.cs" />
+    <Compile Include="Tests\Events\MailManager.cs" />
+    <Compile Include="Tests\DynamicTest.cs" />
+    <Compile Include="Tests\EnumMessing.cs" />
+    <Compile Include="Tests\Events\MailTest.cs" />
+    <Compile Include="Tests\Events\NewEmailEventArgs.cs" />
+    <Compile Include="Tests\ExpressionTree.cs" />
+    <Compile Include="Tests\FileWriter.cs" />
+    <Compile Include="Tests\GenericMethods.cs" />
+    <Compile Include="Tests\Layout.cs" />
+    <Compile Include="Tests\QuizQuestions.cs" />
+    <Compile Include="Tests\Shape.cs" />
+    <Compile Include="Tests\Singleton.cs" />
+    <Compile Include="Tests\StatisClass.cs" />
+    <Compile Include="Tests\StructsVsReferenceTypes.cs" />
+    <Compile Include="Tests\TestCustomHashMap.cs" />
+    <Compile Include="Tests\TestCustomLinkedList.cs" />
+    <Compile Include="Tests\Events\Fax.cs" />
+    <Compile Include="Tests\TestString.cs" />
+    <Compile Include="Tests\TryCatchExceptionTests.cs" />
+    <Compile Include="Tests\YourClass.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
