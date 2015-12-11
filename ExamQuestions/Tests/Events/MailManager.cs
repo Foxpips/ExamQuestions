@@ -9,10 +9,12 @@ namespace ExamQuestions.Tests.Events
 
         public delegate void MyCustomEventHandler<in TArgs>(object sender, TArgs ags);
 
-        public async Task SimulateMail(NewEmailEventArgs e)
+        public async Task SimulateMail(NewEmailEventArgs args)
         {
             await Task.Delay(TimeSpan.FromSeconds(2));
-            e.Raise(this, ref NewEmailEvent);
+            args.Raise(this, ref NewEmailEvent);
+            
+            NewEmailEvent.Raise(this, args);
         }
     }
 }

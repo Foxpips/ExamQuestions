@@ -6,6 +6,8 @@ namespace ExamQuestions.Tests.Events
     {
         public void Listen(MailManager mail)
         {
+            mail.NewEmailEvent -= (sender, args) => { };
+
             mail.NewEmailEvent += (sender, args) =>
             {
                 Console.WriteLine("New Email Received:");

@@ -4,6 +4,6 @@ namespace ExamQuestions.Tests.Events
 {
     public interface IMailManager
     {
-        Task SimulateMail(NewEmailEventArgs e);
+        Task SimulateMail(NewEmailEventArgs args);
     }
 }
